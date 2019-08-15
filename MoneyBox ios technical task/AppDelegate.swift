@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         window = UIWindow(frame: UIScreen.main.bounds)
-        let mainController = Home() as UIViewController
+        let mainController = ViewController() as UIViewController
         let navigationController = UINavigationController(rootViewController: mainController)
         navigationController.navigationBar.isTranslucent = true
         self.window?.rootViewController = navigationController
